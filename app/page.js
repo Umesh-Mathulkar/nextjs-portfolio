@@ -6,6 +6,7 @@ import LandingPage from './views/Landing';
 import ProjectSection from './views/Projects';
 import { debounce } from 'lodash';
 import SideNav from './views/layout/SideNav';
+import SkillsSection from './views/Skills';
 
 const sectionVariants = {
   initial: { opacity: 0, scale: 0.8, y: 50 },
@@ -34,10 +35,12 @@ const sectionVariants = {
 const sections = {
   landing: <LandingPage />,
   about: <AboutSection />,
+  skills: <SkillsSection/>,
   projects: <ProjectSection />,
+ 
 };
 
-const sectionOrder = ['landing', 'about', 'projects'];
+const sectionOrder = ['landing', 'about','skills', 'projects'];
 
 const Home = () => {
   const [currentSection, setCurrentSection] = useState('landing');

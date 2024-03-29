@@ -1,16 +1,19 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import Image from 'next/image';
-import MyPic from '@/app/assets/images/mypic.jpg';
+import React from "react";
+import { motion } from "framer-motion";
+import Image from "next/image";
+import MyPic from "@/app/assets/images/mypic.jpg";
 const AboutSection = () => {
   const containerVariants = {
     initial: { opacity: 0, y: 50 },
-    animate: { opacity: 1, y: 0, transition: { delay: 0.2, duration: 0.8 } }
+    animate: { opacity: 1, y: 0, transition: { delay: 0.2, duration: 0.8 } },
   };
 
   const imageVariants = {
     initial: { scale: 0 },
-    animate: { scale: 1, transition: { type: 'spring', stiffness: 260, damping: 20 } }
+    animate: {
+      scale: 1,
+      transition: { type: "spring", stiffness: 260, damping: 20 },
+    },
   };
 
   return (
@@ -41,12 +44,35 @@ const AboutSection = () => {
           <div className="w-full lg:w-2/3 px-4">
             <div className="leading-relaxed text-lg space-y-6 text-white">
               <p>
-                Hi, I'm Umesh Mathulkar, a passionate Full Stack Web Developer with a knack for creating dynamic and user-friendly web applications. With a solid foundation in both front-end and back-end technologies, I aim to bridge the gap between user experience and functional design.
+                Hi there! I'm Umesh Mathulkar, a full-stack web developer with a
+                passion for crafting exceptional digital experiences. With
+                expertise spanning both front-end and back-end technologies, I
+                strive to create seamless, user-centric applications that blend
+                functionality and aesthetics.
               </p>
               <p>
-                I hold a Bachelor of Technology degree from Government College of Engineering, Jalgaon, and have completed a Full Stack Web Development Program certification. My journey in web development is marked by continuous learning and applying the latest technologies to solve real-world problems.
+                Armed with a Bachelor's degree in Technology from Government
+                College of Engineering, Jalgaon, and a Full Stack Web
+                Development Program certification, I possess a strong foundation
+                in web development principles and practices. My journey is
+                fueled by a relentless pursuit of knowledge, allowing me to stay
+                ahead of the curve and deliver innovative solutions that address
+                real-world challenges.
               </p>
-              {/* Add more paragraphs as needed */}
+             
+              <div className="bg-gray-700 rounded-lg p-6">
+              
+                <p>
+                  My skillset includes proficiency in front-end technologies
+                  such as HTML, CSS, JavaScript, React, Next.js, Bootstrap,
+                  Tailwind CSS, and Material UI. On the back-end, I'm
+                  well-versed in Node.js, Express, and database management
+                  systems like MongoDB and MySQL. Additionally, I have
+                  experience with tools like Git, GitHub, and Postman, enabling
+                  me to streamline development workflows and collaborate
+                  seamlessly with teams.
+                </p>
+              </div>
             </div>
           </div>
         </div>
