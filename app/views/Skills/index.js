@@ -8,7 +8,7 @@ import {
   SiNextdotjs,
   SiBootstrap,
   SiTailwindcss,
-  SiMaterialui,
+
   SiNodedotjs,
   SiExpress,
   SiMongodb,
@@ -44,7 +44,7 @@ const SkillsSection = () => {
     { name: "Next.js", icon: SiNextdotjs },
     { name: "Bootstrap", icon: SiBootstrap },
     { name: "Tailwind CSS", icon: SiTailwindcss },
-    { name: "Material UI", icon: SiMaterialui },
+    // { name: "Material UI", icon: SiMaterialui },
   ];
 
   const backendSkills = [
