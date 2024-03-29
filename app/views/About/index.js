@@ -44,14 +44,14 @@ const AboutSection = () => {
           <div className="w-full lg:w-2/3 px-4">
             <div className="leading-relaxed text-lg space-y-6 text-white">
               <p>
-                Hi there! I'm Umesh Mathulkar, a full-stack web developer with a
+                Hi there! I&apos;m Umesh Mathulkar, a full-stack web developer with a
                 passion for crafting exceptional digital experiences. With
                 expertise spanning both front-end and back-end technologies, I
                 strive to create seamless, user-centric applications that blend
                 functionality and aesthetics.
               </p>
               <p>
-                Armed with a Bachelor's degree in Technology from Government
+                Armed with a Bachelor&apos;s degree in Technology from Government
                 College of Engineering, Jalgaon, and a Full Stack Web
                 Development Program certification, I possess a strong foundation
                 in web development principles and practices. My journey is
@@ -65,7 +65,7 @@ const AboutSection = () => {
                 <p>
                   My skillset includes proficiency in front-end technologies
                   such as HTML, CSS, JavaScript, React, Next.js, Bootstrap,
-                  Tailwind CSS, and Material UI. On the back-end, I'm
+                  Tailwind CSS, and Material UI. On the back-end, I&apos;m
                   well-versed in Node.js, Express, and database management
                   systems like MongoDB and MySQL. Additionally, I have
                   experience with tools like Git, GitHub, and Postman, enabling
