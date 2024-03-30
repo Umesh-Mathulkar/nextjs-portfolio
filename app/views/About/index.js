@@ -2,19 +2,11 @@ import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import MyPic from "@/app/assets/images/mypic.jpg";
+import { containerVariants } from "../Variants/SkillVariants";
+import { imageVariants } from "../Variants/AboutVariants";
 const AboutSection = () => {
-  const containerVariants = {
-    initial: { opacity: 0, y: 50 },
-    animate: { opacity: 1, y: 0, transition: { delay: 0.2, duration: 0.8 } },
-  };
 
-  const imageVariants = {
-    initial: { scale: 0 },
-    animate: {
-      scale: 1,
-      transition: { type: "spring", stiffness: 260, damping: 20 },
-    },
-  };
+
 
   return (
     <motion.section
@@ -32,7 +24,7 @@ const AboutSection = () => {
         </motion.h2>
         <div className="flex flex-wrap justify-center items-center -mx-4">
           <motion.div
-            className="w-full lg:w-1/3 px-4 mb-8 lg:mb-0"
+            className="w-full lg:w-1/3 px-4 mb-8 lg:mb-0 flex justify-center"
             variants={imageVariants}
           >
             <Image

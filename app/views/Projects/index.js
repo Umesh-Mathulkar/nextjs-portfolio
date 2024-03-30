@@ -4,24 +4,11 @@ import Image from 'next/image';
 
 import { projects } from '@/app/assets/data/projects';
 import { FaArrowAltCircleRight } from 'react-icons/fa';
+import { pillVariants, projectVariants } from '../Variants/ProjectVariants';
+import Link from 'next/link';
 
 const ProjectCard = ({ project }) => {
-  const projectVariants = {
-    initial: { opacity: 0, scale: 0.95 },
-    animate: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
-    whileHover: { scale: 1.05, transition: { duration: 0.2 } }
-  };
-
-  const pillVariants = {
-    hover: {
-      scale: 1.1,
-      transition: {
-        duration: 0.2,
-        type: 'spring',
-        stiffness: 300,
-      },
-    },
-  };
+ 
 
   return (
     <motion.div
@@ -79,13 +66,13 @@ const ShowMoreCard = () => {
     <div className="flex flex-col items-center justify-center rounded-xl overflow-hidden bg-gray-800 shadow-xl py-12">
       <h3 className="text-3xl font-bold mb-3 text-white">Show More</h3>
       <p className="text-gray-400 mb-4">Explore more projects...</p>
-      <motion.a
-        href="#"
+      <Link
+        href="/views/project-list"
         className="text-blue-500 hover:text-blue-400 flex items-center"
         whileHover={{ scale: 1.1 }}
       >
         Explore <FaArrowAltCircleRight className="ml-2" />
-      </motion.a>
+      </Link>
     </div>
   );
 };
